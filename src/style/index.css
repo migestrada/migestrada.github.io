@@ -1,0 +1,25 @@
+.proyect-list-item .card {
+  height: 500px;
+  border-radius: 50%;
+}
+
+.card-info .card-title {
+  text-shadow: 2px 2px black;
+}
+
+.proyect-list-item {
+  border-radius: 10px;
+}
+
+.card-info{
+  position: relative;
+  bottom: -80%;
+  color: white
+}
+
+#animated-card-item .card-body {
+  background-image: url('../images/animated-cards.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
