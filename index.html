@@ -6,45 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="./src/style/index.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+  <link rel="stylesheet" href="./src/style/layout.css">
+  <link rel="stylesheet" href="./src/style/cards.css">
+  <link rel="stylesheet" href="./src/style/skills.css">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="src/javascript/index.js"></script>
+
 </head>
 <body>
-  <nav class="navbar navbar-light bg-dark">
-    <a class="navbar-brand text-white" href="./">
-      <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      Proyectos
-    </a>
+  <nav class="navbar navbar-light">
+    <button id="nav-open-btn" class="toggle-nav-btn btn p-0 m-0">
+      <i class="bi bi-list text-white"></i>
+    </button>
+    <div id="nav-content">
+      <button id="nav-close-btn" class="toggle-nav-btn border border-white btn p-0 m-0">
+        <i class="text-white bi bi-x"></i>
+      </button>
+      <ul class="list-unstyled w-100 text-center">
+        <li><a href="#aboutme">SOBRE MÍ</a></li>
+        <li><a href="#skills">HABILIDADES</a></li>
+        <li><a href="#proyects">PROYECTOS</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+      </ul>
+    </div>
   </nav>
-  <main class="mt-4">
-    <div id="projects-list" class="container">
-      <div class="row">
-        <div class="proyect-list-item col-sm-12 col-md-4">
-          <div id="animated-card-item" class="card">
-            <div class="card-body rounded">
-              <div class="card-info">
-                <a href="./animated-cards"><h4 class="card-title text-white">Animated cards</h4></a>
-                <p class="card-text font-weight-bold font-italic">Created with html, css and javascript only</p>
+  <main class="w-100">
+    <div class="container">
+      <section id="aboutme" class="centered-section">
+        <h1>Miguel Patricio Estrada Moraga</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt tenetur optio quos voluptatem. Dolorum reiciendis quisquam quo, nihil error voluptatum ab tenetur praesentium expedita aspernatur harum in omnis inventore?</p>
+      </section>
+      <section id="skills" class="centered-section">
+        <div class="skills-list">
+          <div class="skill-item">
+            <i class="devicon-ruby-plain-wordmark colored skill-icon"></i>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-html5-plain-wordmark colored skill-icon"></i>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-react-original-wordmark colored skill-icon"></i>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-css3-plain-wordmark colored skill-icon"></i>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-postgresql-plain-wordmark colored skill-icon"></i>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-mysql-plain-wordmark colored skill-icon"></i>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-ubuntu-plain-wordmark colored skill-icon"></i>
+          </div>
+        </div>
+      </section>
+      <section id="proyects">
+        <div class="row">
+          <div class="proyect-list-item col-sm-12 col-md-4 open-data-url" data-url="./animated-cards">
+            <div id="animated-card-item" class="card">
+              <div class="card-body rounded">
+                <h4 class="card-title text-white">CARD ANIMADAS</h4>
+                <p class="card-text font-italic">Animaciones simples de cards</p>
+              </div>
+            </div>
+          </div>
+          <div class="proyect-list-item col-sm-12 col-md-4 open-data-url" data-url="./english-dictionary">
+            <div id="animated-card-item" class="card">
+              <div class="card-body rounded">
+                <h4 class="card-title text-white">DICCIONARIO EN INGLES</h4>
+                <p class="card-text font-italic">Buscador de palabras que entrega significados en inglés</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="proyect-list-item col-sm-12 col-md-4">
-          <div id="animated-card-item" class="card">
-            <div class="card-body rounded">
-              <div class="card-info">
-                <a href="./english-dictionary"><h4 class="card-title text-white">English Dictionary</h4></a>
-                <p class="card-text font-weight-bold font-italic">Created with html, css and jquery</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
+      <section id="contact">
+        <h1>Miguel Patricio Estrada Moraga</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt tenetur optio quos voluptatem. Dolorum reiciendis quisquam quo, nihil error voluptatum ab tenetur praesentium expedita aspernatur harum in omnis inventore?</p>
+      </section>
     </div>
   </main>
 </body>

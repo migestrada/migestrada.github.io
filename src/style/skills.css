@@ -1,0 +1,19 @@
+.skill-icon {
+  font-size: 100px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skill-item {
+  width: 25%;
+  text-align: center;
+}

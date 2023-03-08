@@ -1,14 +1,13 @@
-.proyect-list-item .card {
-  height: 500px;
-  border-radius: 50%;
-}
-
-.card-info .card-title {
+.card {
   text-shadow: 2px 2px black;
 }
 
-.proyect-list-item {
-  border-radius: 10px;
+.card-body {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
 }
 
 .card-info{
@@ -22,4 +21,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.open-data-url {
+  cursor: pointer;
+}
+
+.open-data-url:hover {
+  opacity: 0.5;
 }
