@@ -65,6 +65,53 @@ nav.active {
   display: none !important;
 }
 
+.icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.icon-item {
+  width: 25%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.icon-item i {
+  font-size: 100px;
+}
+
+.icon-item img {
+  width: 140px;
+}
+
+#title {
+  font-weight: 600;
+}
+
+#subtitle {
+  color: gray;
+  font-style: italic;
+}
+
+#fav-button-audio {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+#fav-button-audio li {
+  color: white;
+}
+
 @media (max-width: 768px) {
   body {
     display: flex;

@@ -11,4 +11,6 @@ $(function() {
   $('body').on('click', 'nav li', function() {
     $('#nav-content').removeClass('active')
   })
+
+  $('#years-experience').text(new Date().getFullYear() - 2020)
 });

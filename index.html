@@ -22,6 +22,10 @@
 
 </head>
 <body>
+  <button id="fav-button-audio" data-play="false" class="button btn-dark" data-toggle="audio" data-target="#aboutme">
+    <i class="bi bi-play"></i>
+  </button>
+
   <nav class="navbar navbar-light">
     <button id="nav-open-btn" class="toggle-nav-btn btn p-0 m-0">
       <i class="bi bi-list text-white"></i>
@@ -32,40 +36,54 @@
       </button>
       <ul class="list-unstyled w-100 text-center">
         <li><a href="#aboutme">SOBRE MÍ</a></li>
+        <li><a href="#hobbies">HOBBIES</a></li>
         <li><a href="#skills">HABILIDADES</a></li>
         <li><a href="#proyects">PROYECTOS</a></li>
         <li><a href="#contact">CONTACTO</a></li>
+        <li><a href="https://drive.google.com/file/d/168deqUqVLovVVKQG6XQpAFpzDIFW5fn9/view?usp=sharing" target="_blank">CV</a></li>
       </ul>
     </div>
   </nav>
   <main class="w-100">
     <div class="container">
       <section id="aboutme" class="centered-section">
-        <h1>Miguel Patricio Estrada Moraga</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt tenetur optio quos voluptatem. Dolorum reiciendis quisquam quo, nihil error voluptatum ab tenetur praesentium expedita aspernatur harum in omnis inventore?</p>
+        <h1 id="title">MIGUEL ESTRADA MORAGA</h1>
+        <h6 id="subtitle">Ingeniero en Informática egresado de DUOC UC en el año 2020, ±<span id="years-experience"></span> años de experiencia</h6>
+        <audio controls class="mt-1">
+          <source src="./src/audio/about_me_audio.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <p class="mt-4">Considero que soy una persona entusiasta, motivada y altamente comprometida con mis responsabilidades. Me han dicho en varias ocasiones que tengo habilidades para la enseñanza, por lo que el trabajo en equipo es algo que se me da muy bien. Soy adaptable y capaz de enfrentar desafíos en diferentes entornos.</p>
+        <p class="mt-1">Siempre he pensado que las buenas relaciones conducen a buenos resultados, por lo que me esfuerzo constantemente por mantener un ambiente laboral positivo en todas partes donde trabajo. Soy organizado, aunque no necesariamente metódico, y busco mejorar día a día. En algún momento de mi carrera, espero liderar equipos multidisciplinarios.</p>
+        <p class="mt-4">
+          <strong>Objetivo actual:</strong> Aprender Python y adquirir más conocimiento sobre finanzas.
+        </p>
+      </section>
+      <section id="hobbies" class="centered-section">
+
       </section>
       <section id="skills" class="centered-section">
-        <div class="skills-list">
-          <div class="skill-item">
-            <i class="devicon-ruby-plain-wordmark colored skill-icon"></i>
+        <div class="icons-list">
+          <div class="icon-item">
+            <i class="devicon-ruby-plain-wordmark colored icon"></i>
           </div>
-          <div class="skill-item">
-            <i class="devicon-html5-plain-wordmark colored skill-icon"></i>
+          <div class="icon-item">
+            <i class="devicon-html5-plain-wordmark colored icon"></i>
           </div>
-          <div class="skill-item">
-            <i class="devicon-react-original-wordmark colored skill-icon"></i>
+          <div class="icon-item">
+            <i class="devicon-react-original-wordmark colored icon"></i>
           </div>
-          <div class="skill-item">
-            <i class="devicon-css3-plain-wordmark colored skill-icon"></i>
+          <div class="icon-item">
+            <i class="devicon-css3-plain-wordmark colored icon"></i>
           </div>
-          <div class="skill-item">
-            <i class="devicon-postgresql-plain-wordmark colored skill-icon"></i>
+          <div class="icon-item">
+            <i class="devicon-postgresql-plain-wordmark colored icon"></i>
           </div>
-          <div class="skill-item">
-            <i class="devicon-mysql-plain-wordmark colored skill-icon"></i>
+          <div class="icon-item">
+            <i class="devicon-mysql-plain-wordmark colored icon"></i>
           </div>
-          <div class="skill-item">
-            <i class="devicon-ubuntu-plain-wordmark colored skill-icon"></i>
+          <div class="icon-item">
+            <i class="devicon-ubuntu-plain-wordmark colored icon"></i>
           </div>
         </div>
       </section>
@@ -89,9 +107,18 @@
           </div>
         </div>
       </section>
-      <section id="contact">
-        <h1>Miguel Patricio Estrada Moraga</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt tenetur optio quos voluptatem. Dolorum reiciendis quisquam quo, nihil error voluptatum ab tenetur praesentium expedita aspernatur harum in omnis inventore?</p>
+      <section id="contact" class="centered-section">
+        <div class="icons-list">
+          <div class="icon-item open-data-url" data-url="https://www.linkedin.com/in/miguel-estrada-m/">
+            <i class="devicon-linkedin-plain colored"></i>
+          </div>
+          <div class="icon-item open-data-url" data-url="https://github.com/migestrada">
+            <i class="devicon-github-original-wordmark colored"></i>
+          </div>
+          <div class="icon-item open-data-url" data-url="https://youtu.be/dQw4w9WgXcQ">
+            <img src="./src/images/onlyfans-icon.svg" alt="">
+          </div>
+        </div>
       </section>
     </div>
   </main>
