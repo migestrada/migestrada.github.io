@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Estrada</title>
+  <link rel="stylesheet" href="./src/style/global.css">
+  <link rel="stylesheet" href="./src/style/nav.css">
+  <link rel="stylesheet" href="./src/style/main.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- choose one -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="#home">
+          <i data-feather="home"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#about-me">
+          <i data-feather="user"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#projects">
+          <i data-feather="folder"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <i data-feather="heart"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="home" class="container">
+      <div id="resume">
+        <h1 class="title">
+          LOREM IPSUM DOLOR
+        </h1>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore qui, soluta reprehenderit voluptatum ipsum incidunt aperiam fugiat, impedit nemo animi est quisquam necessitatibus! Adipisci ipsam deleniti officiis voluptas quam.
+        </p>
+      </div>
+      <div></div>
+    </div>
+    <div id="about-me" class="container">
+      <h1>About Me</h1>
+    </div>
+    <div id="projects" class="container">
+      <div class="project" id="agri">
+        <div class="label">
+          <h2 class="title">AGRI</h2>
+          <div class="subtitle">
+            AGRI es un software especializado en el sector agrícola que te permite gestionar tus campos de forma centralizada, simple y eficiente, desde cualquier dispositivo
+          </div>
+          <div class="technologies">
+            <h3>Tecnologías</h3>
+            <div class="icons">
+              <i class="devicon-ruby-plain colored"></i>
+              <i class="devicon-postgresql-plain colored"></i>
+              <i class="devicon-heroku-original colored"></i>
+              <i class="devicon-react-original colored"></i>
+            </div>
+          </div>
+          <a href="https://agri.cl/" target="_blank">URL</a>
+        </div>
+      </div>
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+    </div>
+    <div id="contact" class="container">
+      <h1>Contact</h1>
+    </div>
+  </main>
+
+  <script>
+    feather.replace()
+  </script>
+
+  <script src="./src/javascript/projects.js"></script>
+</body>
+</html>

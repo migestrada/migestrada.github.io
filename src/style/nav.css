@@ -1,0 +1,30 @@
+nav {
+  width: 5rem;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+nav ul li a{
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover > a svg {
+  stroke: gray;
+}
