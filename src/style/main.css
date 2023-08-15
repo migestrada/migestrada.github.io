@@ -119,8 +119,8 @@ main::-webkit-scrollbar-thumb:hover {
   opacity: 1;
 }
 
-#agri {
-  background-image: url('../images/farm.webp');
+#css-logos {
+  background-image: url('../images/css-logos.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-color: skyblue;
